@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="Data">
+
+        <h1 class="title">Super Hero</h1>
+
+        <input class="search" placeholder="search" 
+            onkeyup="searchName(this.value)">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Planet</th>
+                    <th>Group</th>
+
+                </tr>
+            </thead>
+            <tbody id="data">
+               
+            </tbody>
+        </table>
+
+        <!-- <button onClick="addUser()" class="btn">Add Hero</button> -->
+
+        <button id="myBtn" >Add Hero</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+<!-- Modal content -->
+ 
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form class="form">
+        <label for="fname">Id:</label><br>
+        <input type="text" id="id"><br><br>
+
+        <label for="lname">Name:</label><br>
+        <input type="text" id="name"><br><br>
+
+        <label for="lname">Age:</label><br>
+        <input type="number" id="age"><br><br>
+
+        <label for="lname">Planet:</label><br>
+        <input type="text" id="planet"><br><br>
+
+        <label for="lname">Group:</label><br>
+        <input type="text" id="group"><br><br>
+        
+
+        <input type="submit" value="Submit" >
+      </form> 
+  </div>
+
+</div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
